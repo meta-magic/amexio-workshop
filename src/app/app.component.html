@@ -1,0 +1,21 @@
+<amexio-nav  [title]="'Amexio Meetup'">
+    <amexio-nav-item position-right 
+       [type]="'menu'"
+       [title]="'title'"
+       (onNavItemClick)="onNavClick($event)"
+       [data]="data"
+       [icon]="'icon'">
+    </amexio-nav-item>
+    <amexio-nav-item position-right
+       [type]="'button'"
+       [title]="'Logout'"
+       (onNavItemClick)="onLogout()"
+       [icon]="'icon'">
+    </amexio-nav-item>
+</amexio-nav>
+<br><br><br><br>
+<amexio-box  padding="true">
+  <router-outlet></router-outlet>
+  <!-- <chart-demo></chart-demo>
+  <employee-registration></employee-registration> -->
+</amexio-box>
